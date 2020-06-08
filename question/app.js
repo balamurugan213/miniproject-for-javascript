@@ -1,15 +1,11 @@
 //using selectors inside the element
 
-const question = document.querySelectorAll(
-	'.question'
-)
+const question = document.querySelectorAll('.question')
 question.forEach(function(ques){
-	const btn = ques.querySelector(
-		'.question-btn'
-	)
+	const btn = ques.querySelector('.question-btn')
 	btn.addEventListener('click', function(){
 		question.forEach(function(q){
-			if (q !== btn) {
+			if (q !== ques) {
 				q.classList.remove('show-text')
 			}
 		})
